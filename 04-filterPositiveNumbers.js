@@ -8,14 +8,16 @@
 
 function filterPositiveNumbers(array) {
     console.log("complete com o código aqui! :)");
+
+    let positive = array.filter(array => array >= 0)
+
+    console.log(positive)
+
+    return positive;
 }
 
 
 filterPositiveNumbers([1, -2, 0, 5, 8, -3]);
-
-
-
-
 
 
 

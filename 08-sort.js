@@ -5,9 +5,18 @@
 let exampleArray = [573, 105, 13, 10, 52];
 
 function sort(array) {
-    console.log("complete com o código aqui! :)");
-}
+    for(let i = 0; i < array.length; i++) {
+        for (let x = 0; x < array.length - i - 1; x++) {
+            if(array[x] > array[x + 1]) {
+                let temp = array[x];
+                array[x] = array[x + 1];
+                array[x + 1] = temp;
+            }
+        }
+    }
 
+    return array
+}
 
 
 
@@ -21,4 +30,5 @@ if(compareArrays(sort(exampleArray), exampleArray.sort())) {
 } else {
     console.log("❌ failed");
 }
+
 // ________________________ TEST ________________________

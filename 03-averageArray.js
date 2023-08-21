@@ -11,16 +11,16 @@ const exampleArray = [23, 14, 5, 300, 2];
 
 function averageArray(array) {
     console.log("complete com o código aqui! :)");
-}
+    
+    let avg = 0;
+    
+    for(i = 0; i < array.length; i++) {
+        avg += array[i];
+    }
 
-
-
-
-
-
-
-
-
+    console.log(`${avg} / ${array.length} = ${avg / array.length}`)
+    
+    return avg / array.length;
 
 // ________________________ TEST ________________________
 console.log('TEST:')

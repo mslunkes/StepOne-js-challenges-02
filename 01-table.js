@@ -17,14 +17,24 @@
 
 
 
-function table(number) {
+/*function table(number) {
     console.log("complete com o código aqui! :)");
+    
+    for (let number = 1; number <=10 ; number++) {
+        console.log("The table of 6 is: " + number * 6);
+    }
 }
+table(2);*/
 
-table(2);
 
 // Bônus:
 // Agora coloque mais um parâmetro na função: ao invés da tabuada ir de 1 a 10, 
 // agora ela pode ir de 1 até x.
 
+function bonus(number, x) {
+    for(let i = 1; i <= x; i++) {
+        console.log(`${i} x ${number} = ${i*number}`);
+    }
+}
 
+bonus(3, 30)
